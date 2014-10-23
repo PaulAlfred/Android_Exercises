@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+/home/pauldesilva/Android_Exercises/.metadata/.plugins/org.eclipse.jdt.core
+2416920895.index
+1567306215.index
+1270315800.index
+1829629478.index
+3780927934.index
+3887067720.index
