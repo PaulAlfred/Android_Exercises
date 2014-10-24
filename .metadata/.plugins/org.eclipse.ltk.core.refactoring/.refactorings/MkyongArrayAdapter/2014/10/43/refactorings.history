@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;drawable-xhdpi&apos;&#x0A;- Original project: &apos;MkyongArrayAdapter&apos;&#x0A;- Destination element: &apos;drawable-xhdpi&apos;&#x0A;- Original elements:&#x0A;     sample_3.jpg&#x0A;     sample_0.jpg&#x0A;     sample_1.jpg&#x0A;     sample_2.jpg&#x0A;- Update references to refactored element" description="Move files" element1="res/drawable-xhdpi/sample_3.jpg" element2="res/drawable-xhdpi/sample_0.jpg" element3="res/drawable-xhdpi/sample_1.jpg" element4="res/drawable-xhdpi/sample_2.jpg" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1414120925935" target="/HelloGridView/res/drawable-xhdpi" units="0" version="1.0"/>
+</session>
