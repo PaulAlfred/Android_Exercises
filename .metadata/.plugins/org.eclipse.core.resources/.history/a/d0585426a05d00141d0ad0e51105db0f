@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InputControls</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="go">Go!</string>
+    <string-array name="snooze_time_array">snooze_time_array
+       <item>30 sec</item>
+       <item>1 min</item>
+       <item>5 min</item>
+       <item>10 min</item>
+    </string-array>
+	<string name="Snooze_prompt">Choose Snooze Time</string>
+	
+</resources>
