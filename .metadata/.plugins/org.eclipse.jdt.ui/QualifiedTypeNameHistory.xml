@@ -8,9 +8,11 @@
 <fullyQualifiedTypeName name="com.android.exercise.hellogridview.R.drawable"/>
 <fullyQualifiedTypeName name="android.widget.GridView"/>
 <fullyQualifiedTypeName name="com.mkyong.android.tutorial.R.layout"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="com.mkyong.android.exercise.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.ListAdapter"/>
 <fullyQualifiedTypeName name="android.app.ListActivity"/>
+<fullyQualifiedTypeName name="com.android.developer.inputcontrols.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
 </qualifiedTypeNameHistroy>
