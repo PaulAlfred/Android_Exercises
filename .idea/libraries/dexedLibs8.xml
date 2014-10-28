@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dexedLibs8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MkyongArrayAdapter/bin/dexedLibs/android-support-v7-appcompat-04b2ac2eec3446bb61b1684ad6cecc90.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MkyongArrayAdapter/bin/dexedLibs/android-support-v4-3bda445959c62cd58ca8a56820ea700e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MkyongArrayAdapter/bin/dexedLibs/appcompat_v7-86d72d67c23c0868db7588ce85c243ae.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

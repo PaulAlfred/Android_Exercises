@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dexedLibs2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MkyongNormalListView/bin/dexedLibs/android-support-v4-97a955129b43b447496ae667735abc76.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MkyongNormalListView/bin/dexedLibs/android-support-v7-appcompat-04b2ac2eec3446bb61b1684ad6cecc90.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MkyongNormalListView/bin/dexedLibs/appcompat_v7-86d72d67c23c0868db7588ce85c243ae.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
