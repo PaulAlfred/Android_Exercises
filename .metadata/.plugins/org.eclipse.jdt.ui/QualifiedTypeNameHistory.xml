@@ -23,9 +23,14 @@
 <fullyQualifiedTypeName name="com.android_exercise.exercise_numbe_one.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
-<fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="com.android_exercise.NumberTwo.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.CompoundButton.OnCheckedChangeListener"/>
 <fullyQualifiedTypeName name="com.android_exercise.NumberTwo.R.menu"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="ru.startandroid.develop.contextmenu.R.id"/>
+<fullyQualifiedTypeName name="android.view.ContextMenu"/>
+<fullyQualifiedTypeName name="com.android.ContextImageSelect.R.id"/>
+<fullyQualifiedTypeName name="com.android.ContextImageSelect.R.drawable"/>
 </qualifiedTypeNameHistroy>
