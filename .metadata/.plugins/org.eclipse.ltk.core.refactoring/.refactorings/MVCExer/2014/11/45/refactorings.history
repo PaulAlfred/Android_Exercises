@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.android_exer.mvcexer.Controll.java&apos; to &apos;Control.java&apos;&#x0D;&#x0A;- Original project: &apos;MVCExer&apos;&#x0D;&#x0A;- Original element: &apos;com.android_exer.mvcexer.Controll.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.android_exer.mvcexer.Control.java&apos;" description="Rename compilation unit &apos;Controll.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.android_exer.mvcexer{Controll.java" name="Control.java" references="false" stamp="1414898494464" version="1.0"/>
+</session>

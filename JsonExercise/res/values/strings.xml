@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JsonExercise</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string-array name="emp_arr">
+	    <item>emp 01</item>
+	    <item>emp 02</item>
+	    <item>emp 03</item>
+	    <item>emp 04</item>
+	    <item>emp 05</item>
+	    <item>emp 06</item>
+	    <item>emp 07</item>
+	    <item>emp 08</item>
+	    <item>emp 09</item>
+	</string-array>
+</resources>

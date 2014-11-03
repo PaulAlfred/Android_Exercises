@@ -1,7 +1,0 @@
-package com.mkyong.android.exercise;
-
-import android.widget.ArrayAdapter;
-
-public class MobileArrayAdapter extends ArrayAdapter<T> {
-
-}

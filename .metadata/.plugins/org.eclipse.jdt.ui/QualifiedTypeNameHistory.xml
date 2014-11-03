@@ -21,7 +21,6 @@
 <fullyQualifiedTypeName name="com.android.developer.inputcontrols.R.array"/>
 <fullyQualifiedTypeName name="com.android.developer.inputcontrols.R.layout"/>
 <fullyQualifiedTypeName name="com.android_exercise.exercise_numbe_one.R.id"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="com.android_exercise.NumberTwo.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.CompoundButton.OnCheckedChangeListener"/>
@@ -36,5 +35,15 @@
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="com.android_exercises.exerfive_activityinputresult.R.id"/>
 <fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="com.android_Exer.mvcpractice.StarRatingModel.Listener"/>
+<fullyQualifiedTypeName name="com.android_exer.mvcexer.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.android_exercise.jsonexercise.R.layout"/>
+<fullyQualifiedTypeName name="com.android_exercise.jsonexercise.R.array"/>
+<fullyQualifiedTypeName name="com.android_exercise.jsonexercise.R.drawable"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="com.android_exercise.jsonexercise.R.id"/>
 </qualifiedTypeNameHistroy>

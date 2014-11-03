@@ -1,0 +1,16 @@
+package com.android_exer.mvcexer;
+
+import android.view.MotionEvent;
+
+public class Control {
+	private Model model;
+	
+	public Control(Model model){
+		this.model = model;
+	}
+	
+	public void handleTap(MotionEvent event) {
+	    // the old trick with % to wrap around values
+	    model.setName(model.getName() + " you are so cool");
+	  }
+}

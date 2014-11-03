@@ -1,0 +1,5 @@
+package com.android_Exer.mvcpractice;
+
+public final class StarRatingModel {
+
+}

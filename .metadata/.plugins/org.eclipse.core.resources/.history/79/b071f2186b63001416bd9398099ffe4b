@@ -1,0 +1,70 @@
+package com.android_exercise.jsonexercise;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+class SingleRow{
+	String name;
+	String profession;
+	String age;
+	int image;
+
+	public SingleRow(String name, String profession, String age, int image) {
+		this.name = name;
+		this.profession = profession;
+		this.age = age;
+		this.image = image;
+	}
+}
+
+public class EmployeeListAdapter extends BaseAdapter {
+
+
+	ArrayList<SingleRow> list;
+	EmployeeListAdapter(Context c){
+
+		list = new ArrayList<SingleRow>();
+		Resources res = c.getResources();
+		String[] name = res.getStringArray(R.array.emp_arr);
+		String[] profession = res.getStringArray(R.array.emp_arr);
+		String[] age = res.getStringArray(R.array.emp_arr);
+		int[] images = {R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher};
+		for(int i=0; i<9; i++){
+			list.add( new SingleRow( name[i], profession[i], age[i],images[i]));
+		}
+	}
+
+
+
+
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return list.size();
+	}
+
+	@Override
+	public Object getItem(int i) {
+		// TODO Auto-generated method stub
+		return list.get(i);
+	}
+
+	@Override
+	public long getItemId(int i) {
+		// TODO Auto-generated method stub
+		return i;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		View row = inflater.inflate(R.layout.single_row,parent, false);
+		return row;
+	}
+
+}

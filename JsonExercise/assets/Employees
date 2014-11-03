@@ -1,0 +1,13 @@
+{
+	"employees":[
+	{"name":"Paul","age":"24","profession":"Software Developer","image":""},
+	{"name":"Nina","age":"25","profession":"Barista","image":""},
+	{"name":"Jean","age":"20","profession":"Cryptographer","image":""},
+	{"name":"Regina","age":"27","profession":"Sales Manager","image":""},
+	{"name":"Alwin","age":"22","profession":"Aeronautic Mechanic","image":""},
+	{"name":"Justin","age":"24","profession":"System Admin","image":""},
+	{"name":"Charie","age":"40","profession":"General Manager","image":""},
+	{"name":"Hazel","age":"25","profession":"Attorney","image":""},
+	{"name":"Gab","age":"18","profession":"Junior Software Developer","image":""}	
+	]
+}

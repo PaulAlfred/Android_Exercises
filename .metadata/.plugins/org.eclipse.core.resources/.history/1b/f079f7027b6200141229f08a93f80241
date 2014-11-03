@@ -1,0 +1,19 @@
+package com.android_exer.mvcexer;
+
+import android.view.MotionEvent;
+import android.widget.Toast;
+
+public class Control {
+	private Model model;
+	Context context;
+	public Control(Model model){
+		this.model = model;
+	}
+	
+	public void handleTap(MotionEvent event) {
+	    // the old trick with % to wrap around values
+	    model.setName(model.getName() + " you are so cool");
+	    
+	    Toast.makeText(context, text, duration)
+	  }
+}

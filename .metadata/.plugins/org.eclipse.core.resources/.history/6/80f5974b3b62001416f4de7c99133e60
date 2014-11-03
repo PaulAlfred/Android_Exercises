@@ -1,0 +1,30 @@
+package com.android_Exer.mvcpractice;
+
+import android.view.View;
+
+public final class StarRatingView extends View implements StarRatingModel.Listener {
+	 private StarRatingModel model;
+	  private StarRatingController controller;
+	  public void setModel(StarRatingModel model) {
+		    if (model == null) {
+		      throw new NullPointerException("model");
+		    }
+		    
+		    StarRatingModel oldModel = this.model;
+		    if (oldModel != null) {
+		      oldModel.removeListener(this);
+		    }
+		    this.model = model;
+		    this.model.addListener(this);
+		    this.controller = new StarRatingController(this.model);
+		    
+		    if (oldModel != null) {
+		      invalidate();
+		    }
+		  }
+		  
+		  @Override
+		  public void handleStarRatingChanged(StarRatingModel sender) {
+		    invalidate();
+		  }
+}
