@@ -1,16 +1,23 @@
 package com.android_exercise.jsonexercise;
 
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.content.ClipData.Item;
 import android.content.Context;
-import android.content.res.Resources;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 class SingleRow{
 	String name;
@@ -24,10 +31,42 @@ class SingleRow{
 		this.age = age;
 		this.image = image;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getProfession() {
+		return profession;
+	}
+
+	public void setProfession(String profession) {
+		this.profession = profession;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public int getImage() {
+		return image;
+	}
+
+	public void setImage(int image) {
+		this.image = image;
+	}
 }
 
 public class EmployeeListAdapter extends BaseAdapter {
-	
+
 	Context context;
 	LayoutInflater inflater;
 	ArrayList<SingleRow> list;
@@ -35,14 +74,31 @@ public class EmployeeListAdapter extends BaseAdapter {
 
 		this.context = c;
 		list = new ArrayList<SingleRow>();
-		Resources res = c.getResources();
-		String[] name = res.getStringArray(R.array.emp_arr);
-		String[] profession = res.getStringArray(R.array.emp_arr);
-		String[] age = res.getStringArray(R.array.emp_arr);
 		int[] images = {R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher};
-		for(int i=0; i<9; i++){
-			list.add( new SingleRow( name[i], profession[i], age[i],images[i]));
+
+		try{
+			InputStream is = c.getAssets().open("myjson.txt");
+			int size = is.available();
+			byte[] buffer = new byte[size];
+			is.read(buffer);
+			is.close();
+			String bufferString = new String(buffer);
+			
+			JSONObject MainObj = new JSONObject(bufferString);
+			JSONArray jArr = MainObj.getJSONArray("employees");
+			
+	
+			for(int i = 0; i < jArr.length(); i ++){
+				JSONObject value = jArr.getJSONObject(i);
+				list.add(new SingleRow(value.getString("name"), value.getString("profession"), value.getString("age"), images[i]));
+			}
 		}
+		catch(JSONException |  IOException e){
+			((Throwable) e).printStackTrace();
+		}
+
+
+
 	}
 
 
@@ -74,13 +130,16 @@ public class EmployeeListAdapter extends BaseAdapter {
 		TextView age = (TextView) row.findViewById(R.id.textView2);
 		TextView profession = (TextView) row.findViewById(R.id.textView3);
 		ImageView image = 	(ImageView) row.findViewById(R.id.imageView1);
-		
-		SingleRow temp = list.get(i);
-		
-		name.setText("1");
-		age.setText("2");
-		profession.setText(temp.profession);
-		
+
+		for(int j =0; j < list.size(); j++){
+			SingleRow sr = list.get(j);
+			name.setText(sr.getName());
+			age.setText(sr.getAge());
+			profession.setText(sr.getProfession());
+			image.setImageResource(sr.getImage());
+		}
+
+
 		return row;
 	}
 
